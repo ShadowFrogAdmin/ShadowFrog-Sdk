@@ -3,10 +3,10 @@
 ![ShadowFrog Logo](https://github.com/ShadowFrogAdmin/ShadowFrog-Sdk/blob/main/docs/SF%20Square%20small.png)
 
 ## Overview
-Enter the **ShadowFrog Protocol**—the stealthy underbelly of $SHADOWFROG, the memecoin that's croaking up Solana's privacy pond. Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens anonymously: deposit to a mixer pond, prove ownership without revealing amounts, withdraw elsewhere. No traces, just frog vibes.
+Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens anonymously: deposit to a mixer pond, prove ownership without revealing amounts, withdraw elsewhere. No traces, just frog vibes.
 
-- **Core Idea**: Zero-knowledge privacy for memecoin degens. Hide transfers from chain spies using SNARKs and commitment schemes. Meme bonus: "Frog Leaps" trigger on milestones (e.g., 10k holders = community mixer drop).
-- **Why?** Solana's fast, but transparent. $SHADOWFROG fixes that with utility under the lily pad.
+- **Core Idea**: Zero-knowledge privacy for memecoin degens. Hide transfers from chain spies using SNARKs and commitment schemes. 
+- **Why?** Solana's fast, but transparent. SHADOWFROG fixes that with utility under the lily pad.
 
 **Token**: $SHADOWFROG (CA: [Your Contract Address Here])  
 **Chain**: Solana  
