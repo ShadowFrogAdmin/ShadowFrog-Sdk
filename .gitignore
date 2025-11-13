@@ -1,0 +1,6 @@
+node_modules/
+target/
+*.zkey
+*.wast
+*.r1cs
+.DS_Store
