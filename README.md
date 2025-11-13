@@ -1,6 +1,6 @@
 # ShadowFrog Protocol 
 
-![(https://github.com/ShadowFrogAdmin/ShadowFrog-Sdk/blob/main/docs/SF%20Square.png)) 
+!(https://github.com/ShadowFrogAdmin/ShadowFrog-Sdk/blob/main/docs/SF%20Square.png)
 
 ## Overview
 Enter the **ShadowFrog Protocol**—the stealthy underbelly of $SHADOWFROG, the memecoin that's croaking up Solana's privacy pond. Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens anonymously: deposit to a mixer pond, prove ownership without revealing amounts, withdraw elsewhere. No traces, just frog vibes.
