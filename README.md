@@ -1,16 +1,10 @@
 # Privex Protocol 
 
-![Privex Logo](https://github.com/PrivexAdmin/Privex-Sdk/blob/main/docs/Privex.jpg)
+![Privex Logo](https://github.com/PrivexAdmin/Privex-Sdk/blob/main/docs/PrivexBack.png)
 
 ## Overview
-Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens anonymously: deposit to a mixer pond, prove ownership without revealing amounts, withdraw elsewhere. No traces, just frog vibes.
+Privex Solutions specializes in cryptographic protocols and encrypted data stream solutions for decentralized applications. We develop open-source tools to enhance privacy and integrity in high-throughput environments, with a focus on Solana and Ethereum ecosystems.
 
-- **Core Idea**: Zero-knowledge privacy for memecoin degens. Hide transfers from chain spies using SNARKs and commitment schemes. 
-- **Why?** Solana's fast, but transparent. $SHADOWFROG fixes that with utility under the lily pad.
-
-**Token**: $SHADOWFROG (CA: [Your Contract Address Here])  
-**Chain**: Solana  
-**Status**: Alpha – Devnet only. No mainnet deploys. Audits on horizon.
 
 ## Architecture
 - **On-Chain**: Rust/Anchor program for mixer vaults, nullifiers, and proof verification.
@@ -20,9 +14,9 @@ Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens
 ![Architecture Diagram](https://github.com/ShadowFrogAdmin/ShadowFrog-Sdk/blob/main/docs/mermaid-diagram.svg)
 
 ### Key Features
-1. **Privacy Mixer**: Deposit $SHADOWFROG to a shared pond; withdraw with ZK proof of ownership.
+1. **Privacy Mixer**: Deposit $Privex to a shared pond; withdraw with ZK proof of ownership.
 2. **Leap Claims**: Anonymous withdrawals via Merkle proofs—hide your splash.
-3. **Frog Oracle**: Off-chain watcher for meme events (e.g., X hype) to boost mixer liquidity.
+3. **Privex Oracle**: Off-chain watcher for meme events (e.g., X hype) to boost mixer liquidity.
 4. **Ring Leaps**: Multi-sig style anonymity (alpha: basic ring sigs).
 
 ## Quick Start
@@ -34,7 +28,7 @@ Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens
 ### Local Setup
 1. Clone & Install:
 git clone https://github.com/ShadowFrog-Sdk/shadowfrog-protocol
-cd shadowfrog-protocol
+cd privex-protocol
 yarn install  # JS/ZK deps
 anchor build
 2. Compile Circuits:
@@ -43,12 +37,12 @@ circom leap.circom --r1cs --wasm --sym
 snarkjs groth16 setup leap.r1cs powersoftau28_hez_final_10.ptau leap_0000.zkey
 
 ## Usage Example (JS SDK)
-import { ShadowFrogSDK } from '@shadowfrog/sdk';
+import { PrivexSDK } from '@shadowfrog/sdk';
 import { Connection, Keypair } from '@solana/web3.js';
 
 const connection = new Connection('https://api.devnet.solana.com');
 const wallet = Keypair.fromSecretKey(/* your bytes */);
-const sdk = new ShadowFrogSDK(connection, wallet);
+const sdk = new PrivexSDK(connection, wallet);
 
 async function leapTokens(amount) {
   // Generate note & proof off-chain
@@ -63,17 +57,13 @@ async function leapTokens(amount) {
  Alpha Mixer (Deposits + Basic Proofs)
  Full Audit (Q4 2025 – OtterSec?)
  Mainnet + Relayers
- Bug Bounty ($SHADOWFROG pots)
+ Bug Bounty ($PrivexG pots)
  Wallet Plugins: Backpack, Phantom
 
 ##Community
-
-X: @ShadowFrogCoin
-Telegram: t.me/ShadowFrog
-Contribute: PRs for circuit tweaks. Issues for frog lore.
+X: @PrivexCoin
 
 Warnings: Experimental ZK-meme tech. Not for prod. Privacy isn't free—bugs could splash. Ribbit responsibly.
-MIT License © 2025 ShadowFrog Collective
-#JoinTheLeap #FrogArmy #CryptoCommunity #SolanaMemes
+MIT License 
 }
 
