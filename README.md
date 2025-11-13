@@ -33,3 +33,47 @@ Enter the **ShadowFrog Protocol**—the stealthy underbelly of $SHADOWFROG, the 
 
 ### Local Setup
 1. Clone & Install:
+git clone https://github.com/ShadowFrog-Sdk/shadowfrog-protocol
+cd shadowfrog-protocol
+yarn install  # JS/ZK deps
+anchor build
+2. Compile Circuits:
+cd circuits
+circom leap.circom --r1cs --wasm --sym
+snarkjs groth16 setup leap.r1cs powersoftau28_hez_final_10.ptau leap_0000.zkey
+
+## Usage Example (JS SDK)
+import { ShadowFrogSDK } from '@shadowfrog/sdk';
+import { Connection, Keypair } from '@solana/web3.js';
+
+const connection = new Connection('https://api.devnet.solana.com');
+const wallet = Keypair.fromSecretKey(/* your bytes */);
+const sdk = new ShadowFrogSDK(connection, wallet);
+
+async function leapTokens(amount) {
+  // Generate note & proof off-chain
+  const { note, proof } = await sdk.generateLeapProof(amount);
+  // Submit on-chain
+  const tx = await sdk.submitLeap({ note, proof });
+  const sig = await connection.sendTransaction(tx);
+  console.log(`Shadow leap complete: ${sig}. Stay hidden, frog.`);
+
+##Roadmap
+
+ Alpha Mixer (Deposits + Basic Proofs)
+ Full Audit (Q4 2025 – OtterSec?)
+ Mainnet + Relayers
+ Bug Bounty ($SHADOWFROG pots)
+ Wallet Plugins: Backpack, Phantom
+
+##Community
+
+X: @ShadowFrogCoin
+Telegram: t.me/ShadowFrog
+Contribute: PRs for circuit tweaks. Issues for frog lore.
+
+Warnings: Experimental ZK-meme tech. Not for prod. Privacy isn't free—bugs could splash. Ribbit responsibly.
+MIT License © 2025 ShadowFrog Collective
+#JoinTheLeap #FrogArmy #CryptoCommunity #SolanaMemes
+}
+
