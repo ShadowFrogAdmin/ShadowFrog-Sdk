@@ -1,4 +1,4 @@
-# ShadowFrog Protocol ($SHADOWFROG)
+# ShadowFrog Protocol 
 
 ![ShadowFrog Logo](https://your-image-url.com/shadow-frog-leap.png) <!-- Replace with frog-in-darkness meme -->
 
