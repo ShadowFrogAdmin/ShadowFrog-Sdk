@@ -1,6 +1,6 @@
-# ShadowFrog Protocol 
+# Privex Protocol 
 
-![ShadowFrog Logo](https://github.com/ShadowFrogAdmin/ShadowFrog-Sdk/blob/main/docs/SF%20Square%20small.png)
+![Privex Logo](https://github.com/PrivexAdmin/Privex-Sdk/blob/main/docs/Privex.jpg)
 
 ## Overview
 Drawing from Pepe's shadows but with real ZK teeth, we let holders "leap" tokens anonymously: deposit to a mixer pond, prove ownership without revealing amounts, withdraw elsewhere. No traces, just frog vibes.
