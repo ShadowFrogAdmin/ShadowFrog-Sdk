@@ -1,4 +1,4 @@
-```rust
+```rust  
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Token, TokenAccount, Transfer};
 use ark_groth16::prepare_verifying_key;  // Stub for ZK verify
